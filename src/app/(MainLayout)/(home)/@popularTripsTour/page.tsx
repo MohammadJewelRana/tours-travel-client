@@ -1,16 +1,11 @@
-"use client"
+"use client";
 
 import SectionTitle from "@/components/shared/SectionTitle";
 import SingleCard from "@/components/UI/Card";
 import Container from "@/components/UI/Container";
 import { tourData } from "@/db";
- 
- 
-
 
 const page = async () => {
-
-  
   // const [tourData, setTourData] = useState([]);
 
   // useEffect(() => {
@@ -25,12 +20,6 @@ const page = async () => {
   // }, []);
 
   // console.log(tourData);
-  
- 
-  
-
-   
-
 
   return (
     <div>

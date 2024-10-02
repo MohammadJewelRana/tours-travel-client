@@ -12,7 +12,7 @@ const SingleCard = ({ item }: any) => {
     <div className="bg-white w-[300px] shadow-lg rounded-lg overflow-hidden max-w-sm">
       <div className="relative group">
         <Image
-          src={image1}
+          src={image}
           alt={tourPlace}
           height={200}
           width={200}
