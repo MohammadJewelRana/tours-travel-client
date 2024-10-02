@@ -4,7 +4,7 @@ import bannerImg from "@/assets/caresoul/3.jpg";
 
 const Banner2 = () => {
   return (
-    <div className="">
+    <div className="max-w-7xl mx-auto">
       <div className="bg-gradient-to-r w-full from-purple-500 via-pink-500 to-red-500 text-white p-6 rounded-lg shadow-lg mx-auto   ">
         <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
           <div className="text-center md:text-left">
@@ -21,7 +21,7 @@ const Banner2 = () => {
             </p>
 
             <Link
-              href={`/product/manage/${"Footwear"}`}
+              href='/service'
               className="inline-block bg-white text-purple-500 font-semibold text-lg px-6 py-3 rounded-full hover:bg-purple-500 hover:text-white transition-all duration-300"
             >
               Book Now

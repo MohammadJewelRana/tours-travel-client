@@ -1,4 +1,5 @@
 import Button from "@/components/shared/Button";
+import Link from "next/link";
 import React from "react";
 
 const Discount = () => {
@@ -8,7 +9,7 @@ const Discount = () => {
         Get up to <span className="text-red-600 text-4xl">40%</span> off on your
         first trip{" "}
       </h1>
-      <Button buttonText="Book Now" />
+     <Link href={'/service'}>  <Button buttonText="Book Now" /></Link>
     </div>
   );
 };

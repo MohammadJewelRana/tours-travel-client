@@ -1,6 +1,7 @@
 import React from "react";
 import { FaRightLong } from "react-icons/fa6";
 import Button from "./Button";
+import Link from "next/link";
 
 const SectionTitle = ({
   heading,
@@ -21,7 +22,7 @@ const SectionTitle = ({
         </div>
         {/* button */}
         <div>
-         <Button buttonText={buttonText} />
+        <Link href={'/service'}>  <Button buttonText={buttonText} /></Link>
         </div>
       </div>
     </div>
