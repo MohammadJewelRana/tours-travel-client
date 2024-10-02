@@ -9,6 +9,7 @@ import Container from "@/components/UI/Container";
 import Image from "next/image";
 import { FaRightLong } from "react-icons/fa6";
 import { useState } from "react"; // Import useState
+import SectionTitle from "@/components/shared/SectionTitle";
 
 const Popular = () => {
   const popularData = [
@@ -29,24 +30,8 @@ const Popular = () => {
   return (
     <Container>
       {/* header */}
-      <div className="flex justify-between items-center gap-8 flex-wrap">
-        {/* heading */}
-        <div>
-          <h1 className="text-2xl md:text-4xl font-bold my-2">
-            Popular Destinations for trip{" "}
-          </h1>
-          <p className="text-md text-gray-400 my-2">
-            Whether you’re looking for places for a vacation. We are here to
-          </p>
-        </div>
-        {/* button */}
-        <div>
-          <button className="px-8 py-2 bg-green-900 text-white font-semibold rounded-md shadow-md rounded-l-full rounded-r-full hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 flex items-center">
-            View More
-            <FaRightLong className="ml-2" />
-          </button>
-        </div>
-      </div>
+   
+      <SectionTitle heading="Popular Destinations for trip" subHeading=" Whether you’re looking for places for a vacation. We are here to" buttonText="View More" />
 
       {/* main */}
       <div className="my-12 flex justify-between items-center gap-12 flex-wrap">
@@ -64,7 +49,9 @@ const Popular = () => {
                 >
                   {item.id}
                 </h1>
-                <h1 className=" text-2xl md:text-4xl font-bold">{item.title}</h1>
+                <h1 className=" text-2xl md:text-4xl font-bold">
+                  {item.title}
+                </h1>
               </div>
             </div>
           ))}

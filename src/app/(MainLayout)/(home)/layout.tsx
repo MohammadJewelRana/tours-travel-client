@@ -1,5 +1,19 @@
-const layout = ({ children }: { children: React.ReactNode }) => {
-  return <>{children}</>;
+ 
+
+const layout = ({
+  children,
+  popularTripsTour,
+}: {
+  children: React.ReactNode;
+  popularTripsTour: ReactNode;
+}) => {
+  return (
+    <>
+      {popularTripsTour}
+      {children}
+  
+    </>
+  );
 };
 
 export default layout;

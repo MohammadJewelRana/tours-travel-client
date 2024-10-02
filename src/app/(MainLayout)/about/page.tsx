@@ -4,6 +4,7 @@ import WhyChoose from "./_components/WhyChoose";
 import Container from "@/components/UI/Container";
 import Team from "./_components/Team";
 import Newsletter from "@/components/shared/Newsletter";
+import Award from "./_components/Award";
 
 const page = () => {
   return (
@@ -13,9 +14,10 @@ const page = () => {
       <Container>
         <WhyChoose />
         <Team />
+        <Award/>
         <Popular />
       </Container>
-      <Newsletter></Newsletter>
+      <Newsletter />
     </div>
   );
 };

@@ -5,7 +5,7 @@ import backgroundImg from "@/assets/newsletter/1.png";
 const Newsletter = () => {
   return (
     <div
-      className="relative flex items-center justify-center h-[400px] bg-no-repeat bg-right"
+      className="relative flex items-center justify-center h-[400px] bg-no-repeat bg-right mt-24"
       style={{ backgroundImage: `url(${backgroundImg.src})` }}
     >
       <div className="absolute inset-0 bg-black opacity-50" />
