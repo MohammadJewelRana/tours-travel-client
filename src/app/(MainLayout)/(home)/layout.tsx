@@ -1,3 +1,6 @@
+import { ReactNode } from "react";
+import Caresoul from "./_components/Caresoul";
+
  
 
 const layout = ({
@@ -9,6 +12,7 @@ const layout = ({
 }) => {
   return (
     <>
+    <Caresoul/>
       {popularTripsTour}
       {children}
   
